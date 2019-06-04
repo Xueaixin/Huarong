@@ -1,6 +1,7 @@
 package com.example.xaxxu.huarongroad;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,5 +20,10 @@ public class MainActivity extends AppCompatActivity {
         introAlert.setTitle("游戏说明");
         introAlert.setMessage("帮助曹操逃脱！");
         introAlert.show();
+    }
+
+    public void returnHome(View view) {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
     }
 }

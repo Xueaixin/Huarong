@@ -28,7 +28,7 @@
                 android:layout_height="35dp"
                 android:layout_weight="1"
                 android:gravity="bottom|center_vertical"
-                android:text="移动步数"
+                android:text="@string/steps_label"
                 android:textAlignment="center"
                 android:textSize="25sp" />
 
@@ -57,7 +57,7 @@
                 android:layout_height="35dp"
                 android:layout_weight="1"
                 android:gravity="bottom|center_vertical"
-                android:text="最佳成绩"
+                android:text="@string/best_goal"
                 android:textAlignment="center"
                 android:textSize="25sp" />
 
@@ -86,7 +86,7 @@
         <android.support.v7.widget.GridLayout
             android:id="@+id/game_view"
             android:layout_width="340dp"
-            android:layout_height="400dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="#CF7201"
@@ -100,7 +100,7 @@
                 android:layout_height="25dp"
                 android:background="#4CAF50"
                 android:gravity="center"
-                android:text="顺利逃脱"
+                android:text="@string/safe_exit"
                 android:textColor="#FFFFFF"
                 app:layout_column="2"
                 app:layout_columnSpan="2"
@@ -142,11 +142,11 @@
                 android:id="@+id/_right"
                 android:layout_width="10dp"
                 android:layout_height="435dp"
+                android:background="#995400"
                 app:layout_column="5"
                 app:layout_columnSpan="1"
                 app:layout_row="0"
-                app:layout_rowSpan="7"
-                android:background="#995400" />
+                app:layout_rowSpan="7" />
 
             <ImageView
                 android:id="@+id/_left"
@@ -277,7 +277,8 @@
             android:background="#B48102"
             android:text="@string/return_label"
             android:textColor="#FAF2F2"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="returnHome"/>
 
         <Button
             android:id="@+id/introduce_button"
@@ -285,7 +286,7 @@
             android:layout_height="55dp"
             android:layout_weight="1"
             android:background="#B48102"
-            android:text="游戏说明"
+            android:text="@string/introduction"
             android:textColor="#FAF2F2"
             android:textSize="20sp"
             android:onClick="showIntroduction"/>
@@ -296,7 +297,7 @@
             android:layout_height="55dp"
             android:layout_weight="1"
             android:background="#B48102"
-            android:text="重新开始"
+            android:text="@string/restart"
             android:textColor="#FAF2F2"
             android:textSize="20sp" />
     </LinearLayout>

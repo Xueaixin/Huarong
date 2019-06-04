@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Huarong Road</string>
     <string name="return_label">返回主页</string>
+    <string name="introduction">游戏说明</string>
+    <string name="restart">重新开始</string>
+    <string name="safe_exit">顺利逃脱</string>
+    <string name="best_goal">最佳成绩</string>
+    <string name="steps_label">移动步数</string>
 </resources>
