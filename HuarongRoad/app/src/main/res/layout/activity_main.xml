@@ -85,148 +85,179 @@
 
         <android.support.v7.widget.GridLayout
             android:id="@+id/game_view"
-            android:layout_width="320dp"
+            android:layout_width="340dp"
             android:layout_height="400dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            app:columnCount="4"
-            app:rowCount="5"
+            android:background="#CF7201"
+            app:columnCount="6"
+            app:rowCount="7"
             app:useDefaultMargins="false">
 
             <TextView
-                android:id="@+id/zhaoyun"
-                android:layout_width="80dp"
-                android:layout_height="160dp"
-                android:ems="1"
+                android:id="@+id/exit"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:background="#4CAF50"
                 android:gravity="center"
-                android:text="赵云"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="3"
-                app:layout_columnSpan="1"
-                app:layout_row="2"
-                app:layout_rowSpan="2" />
+                android:text="顺利逃脱"
+                android:textColor="#FFFFFF"
+                app:layout_column="2"
+                app:layout_columnSpan="2"
+                app:layout_gravity="center"
+                app:layout_row="6"
+                app:layout_rowSpan="1" />
 
-            <TextView
+            <ImageView
+                android:id="@+id/_bottom2"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="#995400"
+                app:layout_column="4"
+                app:layout_columnSpan="1"
+                app:layout_row="6"
+                app:layout_rowSpan="1" />
+
+            <ImageView
+                android:id="@+id/_bottom1"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="#995400"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="6"
+                app:layout_rowSpan="1" />
+
+            <ImageView
+                android:id="@+id/_top"
+                android:layout_width="320dp"
+                android:layout_height="10dp"
+                android:background="#995400"
+                app:layout_column="1"
+                app:layout_columnSpan="4"
+                app:layout_row="0"
+                app:layout_rowSpan="1" />
+
+            <ImageView
+                android:id="@+id/_right"
+                android:layout_width="10dp"
+                android:layout_height="435dp"
+                app:layout_column="5"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="7"
+                android:background="#995400" />
+
+            <ImageView
+                android:id="@+id/_left"
+                android:layout_width="10dp"
+                android:layout_height="435dp"
+                android:background="#995400"
+                app:layout_column="0"
+                app:layout_columnSpan="1"
+                app:layout_row="0"
+                app:layout_rowSpan="7" />
+
+            <ImageView
                 android:id="@+id/machao"
                 android:layout_width="80dp"
                 android:layout_height="160dp"
-                android:ems="1"
-                android:gravity="center"
-                android:text="马超"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="2"
+                app:layout_column="3"
                 app:layout_columnSpan="1"
-                app:layout_row="3"
-                app:layout_rowSpan="2" />
+                app:layout_row="4"
+                app:layout_rowSpan="2"
+                app:srcCompat="@drawable/machao" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/huangzhong"
                 android:layout_width="80dp"
                 android:layout_height="160dp"
-                android:ems="1"
-                android:gravity="center|center_vertical"
-                android:text="黄忠"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="1"
+                app:layout_column="2"
                 app:layout_columnSpan="1"
-                app:layout_row="3"
-                app:layout_rowSpan="2" />
+                app:layout_row="4"
+                app:layout_rowSpan="2"
+                app:srcCompat="@drawable/huangzhong" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/zhangfei"
                 android:layout_width="80dp"
                 android:layout_height="160dp"
-                android:ems="1"
-                android:gravity="center"
-                android:text="张飞"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="0"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="4"
+                app:layout_rowSpan="2"
+                app:srcCompat="@drawable/zhangfei" />
+
+            <ImageView
+                android:id="@+id/zhaoyun"
+                android:layout_width="80dp"
+                android:layout_height="160dp"
+                app:layout_column="4"
                 app:layout_columnSpan="1"
                 app:layout_row="3"
-                app:layout_rowSpan="2" />
+                app:layout_rowSpan="2"
+                app:srcCompat="@drawable/zhaoyun" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/guanyu"
                 android:layout_width="160dp"
                 android:layout_height="80dp"
-                android:gravity="center"
-                android:text="关羽"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="1"
+                app:layout_column="2"
                 app:layout_columnSpan="2"
-                app:layout_row="2"
-                app:layout_rowSpan="1" />
+                app:layout_row="3"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/guanyu" />
 
-            <TextView
+            <ImageView
+                android:id="@+id/shi"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_column="4"
+                app:layout_columnSpan="1"
+                app:layout_row="2"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/shi" />
+
+            <ImageView
+                android:id="@+id/yong"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_column="1"
+                app:layout_columnSpan="1"
+                app:layout_row="2"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/yong" />
+
+            <ImageView
                 android:id="@+id/zu"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:gravity="center"
-                android:text="卒"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="0"
-                app:layout_columnSpan="1"
-                app:layout_row="2"
-                app:layout_rowSpan="1" />
-
-            <TextView
-                android:id="@+id/zu3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:gravity="center"
-                android:text="卒"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="3"
+                app:layout_column="4"
                 app:layout_columnSpan="1"
                 app:layout_row="1"
-                app:layout_rowSpan="1" />
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/zu" />
 
-            <TextView
-                android:id="@+id/zu2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:gravity="center"
-                android:text="卒"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_column="3"
-                app:layout_columnSpan="1"
-                app:layout_row="0"
-                app:layout_rowSpan="1" />
-
-            <TextView
+            <ImageView
                 android:id="@+id/caocao"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
-                android:gravity="center"
-                android:text="曹操"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="1"
+                app:layout_column="2"
                 app:layout_columnSpan="2"
-                app:layout_gravity="center"
-                app:layout_row="0"
-                app:layout_rowSpan="2" />
+                app:layout_row="1"
+                app:layout_rowSpan="2"
+                app:srcCompat="@drawable/caocao" />
 
-            <TextView
-                android:id="@+id/zu1"
+            <ImageView
+                android:id="@+id/bing"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:gravity="center"
-                android:text="卒"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_column="0"
+                app:layout_column="1"
                 app:layout_columnSpan="1"
-                app:layout_row="0"
-                app:layout_rowSpan="1" />
+                app:layout_row="1"
+                app:layout_rowSpan="1"
+                app:srcCompat="@drawable/bing" />
+
         </android.support.v7.widget.GridLayout>
     </LinearLayout>
 
@@ -243,26 +274,30 @@
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:background="#B48102"
             android:text="@string/return_label"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textColor="#FAF2F2"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/introduce_button"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:background="#B48102"
             android:text="游戏说明"
+            android:textColor="#FAF2F2"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:onClick="showIntroduction"/>
 
         <Button
             android:id="@+id/restart_button"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:background="#B48102"
             android:text="重新开始"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textColor="#FAF2F2"
+            android:textSize="20sp" />
     </LinearLayout>
 </LinearLayout>
