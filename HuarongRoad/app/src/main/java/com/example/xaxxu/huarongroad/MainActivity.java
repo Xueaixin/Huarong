@@ -2,21 +2,13 @@ package com.example.xaxxu.huarongroad;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatImageButton;
-import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.GridLayout;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private int mSteps = 0;
@@ -129,17 +121,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeSteps(View view) {
 
-//        ImageView mm = (ImageView)findViewById(R.id.zu);
-//        Toast.makeText(getApplicationContext(), Integer.toString(mm.getLeft()) + mm.getTop(),
-//                Toast.LENGTH_SHORT).show();
-
         String str = view.getClass().getSimpleName();
-        if(key) {
-            if(str.equals("AppCompatImageView")) {
-                startView = view;
-                startView.setPadding(5, 5, 5, 5);
-                key = false;
-            }
+        if(str.equals("AppCompatImageView")) {
+            startView = view;
+            key = false;
         }
         else {
             if(str.equals("AppCompatImageButton")) {
@@ -224,7 +209,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-            startView.setPadding(0, 0, 0, 0);
             startView = null;
             key = true;
             str = "";
