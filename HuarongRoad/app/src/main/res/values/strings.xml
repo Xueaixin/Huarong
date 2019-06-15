@@ -7,4 +7,8 @@
     <string name="best_goal">目标步数</string>
     <string name="steps_label">移动步数</string>
     <string name="_34">34</string>
+    <string name="cancel_button">取消</string>
+    <string name="new_button">重玩</string>
+    <string name="alert_title">获得胜利</string>
+    <string name="alert_message">您已帮助曹操逃离了华容道，恭喜您获得胜利！</string>
 </resources>

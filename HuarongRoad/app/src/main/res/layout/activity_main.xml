@@ -27,6 +27,7 @@
             android:gravity="center"
             android:text="@string/steps_label"
             android:textAlignment="center"
+            android:textColor="#F7C2B9B9"
             android:textSize="25sp" />
 
         <TextView
@@ -38,6 +39,7 @@
             android:gravity="center"
             android:text="@string/best_goal"
             android:textAlignment="center"
+            android:textColor="#F7C2B9B9"
             android:textSize="25sp" />
 
     </LinearLayout>
@@ -98,26 +100,24 @@
             android:id="@+id/bing"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="80dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/bing" />
 
         <ImageView
             android:id="@+id/zhaoyun"
             android:layout_width="80dp"
             android:layout_height="160dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="160dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="0.666"
             app:srcCompat="@drawable/zhaoyun" />
 
         <ImageView
@@ -125,35 +125,26 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="0.25"
             app:srcCompat="@drawable/zu" />
 
         <ImageView
             android:id="@+id/zhangfei"
             android:layout_width="80dp"
             android:layout_height="160dp"
+            android:layout_marginTop="240dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/zhangfei" />
 
         <ImageView
             android:id="@+id/shi"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginTop="160dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
             app:srcCompat="@drawable/shi" />
@@ -162,50 +153,44 @@
             android:id="@+id/yong"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="240dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/yong" />
 
         <ImageView
             android:id="@+id/caocao"
             android:layout_width="160dp"
             android:layout_height="160dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/caocao" />
 
         <ImageView
             android:id="@+id/huangzhong"
             android:layout_width="80dp"
             android:layout_height="160dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="240dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/huangzhong" />
 
         <ImageView
             android:id="@+id/guanyu"
             android:layout_width="160dp"
             android:layout_height="80dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="160dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
             app:srcCompat="@drawable/guanyu" />
@@ -214,40 +199,35 @@
             android:id="@+id/block1"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="320dp"
             android:background="#B16201"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/_left"
-            app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@+id/_top" />
 
         <ImageView
             android:id="@+id/machao"
             android:layout_width="80dp"
             android:layout_height="160dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="240dp"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="0.662"
             app:layout_constraintStart_toEndOf="@+id/_left"
             app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/machao" />
 
         <ImageButton
             android:id="@+id/block2"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginTop="80dp"
             android:background="#B16201"
             android:onClick="changeSteps"
-            app:layout_constraintBottom_toTopOf="@+id/exit"
-            app:layout_constraintEnd_toStartOf="@+id/_right"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/_left"
-            app:layout_constraintTop_toBottomOf="@+id/_top"
-            app:layout_constraintVertical_bias="0.25" />
+            app:layout_constraintTop_toBottomOf="@+id/_top" />
 
         <TextView
             android:id="@+id/_left"
