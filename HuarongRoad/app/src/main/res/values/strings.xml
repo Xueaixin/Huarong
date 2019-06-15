@@ -4,6 +4,7 @@
     <string name="introduction">游戏说明</string>
     <string name="restart">重新开始</string>
     <string name="safe_exit">顺利逃脱</string>
-    <string name="best_goal">最佳成绩</string>
+    <string name="best_goal">目标步数</string>
     <string name="steps_label">移动步数</string>
+    <string name="_34">34</string>
 </resources>
