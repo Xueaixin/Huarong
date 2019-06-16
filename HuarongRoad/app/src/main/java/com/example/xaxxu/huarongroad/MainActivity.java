@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
             key = false;
         }
         else {
-            if(str.equals("AppCompatImageButton")) {
+            if(!key && str.equals("AppCompatImageButton")) {
                 if(startView.getWidth() == view.getWidth() * 2) {
                     boolean mkey = false;
                     if(startView.getX() == view.getX()) {
